@@ -27,22 +27,4 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Waitlist form
-    const form = document.getElementById('waitlistForm');
-    if (form) {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const name = document.getElementById('firstName').value.trim();
-            const email = document.getElementById('email').value.trim();
-            const type = document.getElementById('buyerType').value;
-            if (!name || !email || !type) return;
-
-            form.innerHTML = `
-                <div class="form-success">
-                    <h3>You're on the list, ${name}.</h3>
-                    <p>We'll be in touch when founding spots open. Check your inbox at <strong>${email}</strong>.</p>
-                </div>
-            `;
-        });
-    }
 });

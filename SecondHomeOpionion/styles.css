@@ -404,6 +404,19 @@ a:hover { color: var(--green-light); }
     margin-top: 8px;
 }
 
+.waitlist-cta {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.waitlist-cta-text {
+    color: rgba(255,255,255,0.8);
+    font-size: 0.95rem;
+}
+.waitlist-cta .btn {
+    align-self: flex-start;
+}
+
 .waitlist-form {
     display: flex;
     flex-direction: column;
